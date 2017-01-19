@@ -1,4 +1,4 @@
-import getCssPath from './get-css-path.js';
+// import getCssPath from './get-css-path.js';
 import oa from 'object-assign';
 
 export default {
@@ -12,6 +12,6 @@ export default {
 		};
 
 		el.innerHTML = '';
-		ityped.init(getCssPath(el), oa(options, binding.value))
+		ityped.init(el, oa(options, binding.value))
 	}
 }
