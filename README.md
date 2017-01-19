@@ -41,7 +41,7 @@ Almost same to [ityped Configuration](https://github.com/luisvinicius167/ityped#
 </span>
 ```
 
-* `showCursor` and `loop` and use in vue directive modifiers, list that: 
+* `showCursor` and `loop` use in vue directive modifiers, like that: 
 
 ```html
 <span v-typed.showCursor="">
@@ -50,7 +50,7 @@ Almost same to [ityped Configuration](https://github.com/luisvinicius167/ityped#
 just like make the ityped configuration showCursor is true, so do loop.
 
 * the directive element's children text will be equal to ityped `strings`,
-when you have multi children, you should make them line break, for example the <br> tag
+when you have multi children, you should make them line break, for example the `<br>` tag
 
 ## Thanks
 
