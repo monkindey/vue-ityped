@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.content {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding: 1rem;
+}
+
+.ityped-cursor {
+    font-size: 2.2rem;
+    color: #888;
+    opacity: 1;
+    -webkit-animation: blink 0.3s infinite;
+    -moz-animation: blink 0.3s infinite;
+    animation: blink 0.3s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #333 !important;
+    font-weight: 600;
+    margin-top: 3rem;
+}
+
+.title {
+    font-size: 5rem !important;
+}
+
+.ityped {
+    font-size: 2.2rem;
+}
+
+.action {
+    opacity: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    background-color: #f1f1f1;
+    height: 10vh;
+    transition: opacity .5s ease-in-out;
+}
+
+.action-input {
+    margin: 0 !important;
+    width: 80% !important;
+    height: 100% !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    font-size: 2rem !important;
+    background-color: transparent !important;
+    border: 0 !important;
+    font-size: 2rem !important;
+    height: 100% !important;
+    color: #595454 !important;
+}
+
+.action-button {
+    width: 20%;
+    margin: 0;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 0;
+}
+
+.action-button:hover,
+.action-button:focus {
+    color: #fff !important;
+}
+
+#ityped {
+    font-size: 4rem;
+    color: #888;
+    text-align: center;
+}
+
+@media screen and (max-width:768px) {
+    .action-input {
+        width: 60%;
+    }
+    .action-button {
+        width: 40%;
+    }
+    #ityped {
+        font-size: 2rem;
+    }
+    .ityped-cursor {
+        font-size: 2rem;
+    }
+}
+
+.ityped-content {
+    display: inline-block;
+    text-align: center;
+    height: auto;
+    min-height: 15rem;
+}
+
+.personal-projects {
+    display: none;
+    height: 90vh;
+    position: fixed;
+    top: 0;
+    background-color: #fafafa;
+    display: flex;
+    width: 100vw;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    transform: translateY(100vh);
+}
+
+.personal-projects-list {
+    width: 100%;
+    display: block;
+    padding: 2rem;
+    overflow-y: auto;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+.personal-projects-list__item {
+    list-style: none;
+    height: 30rem;
+    background-color: #fff;
+    padding: 1rem;
+    width: 90%;
+    border: 1px solid #eae8e8;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}

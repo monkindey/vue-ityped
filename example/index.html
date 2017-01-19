@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vue ityped</title>
+	<link rel="stylesheet" href="./index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+	<style>
+		[v-cloak] {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="content" id="app" v-cloak>
+		<h1 class="title">iTyped.js</h1>
+		<div>
+			<span v-typed.showCursor="{typeSpeed: 100}">
+				<span>Dead simple animated typing</span><br>
+				<span>No jQuery dependency.</span><br>
+				<span>Tiny size: <3kb.</span><br>
+				<span>Just install and Enjoy!</span>
+			</span>
+		</div>
+		<a href="https://github.com/luisvinicius167/ityped">
+			<button>Get Started now!</button>
+		</a>
+	</div>
+</body>
+<script src="https://unpkg.com/vue@2.1.8/dist/vue.min.js"></script>
+<script src="https://unpkg.com/ityped@0.0.7"></script>
+<script src="../dist/vue-ityped.js"></script>
+<script>
+	var vm = new Vue({
+		el: '#app',
+		directives: {
+			typed: vueTyped
+		}
+	});
+</script>
+</html>
