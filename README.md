@@ -6,6 +6,11 @@
 
 [Live Demo](https://monkindey.github.io/vue-ityped/example/index.html)
 
+## Dependencies
+
+* Vue
+* ityped@0.08
+
 ## Usage
 
 ### HTML
