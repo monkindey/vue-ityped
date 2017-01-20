@@ -1,4 +1,3 @@
-// import getCssPath from './get-css-path.js';
 import oa from 'object-assign';
 
 export default {

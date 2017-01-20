@@ -1,10 +1,37 @@
 {
-  "dependencies": {
-    "object-assign": "^4.1.1"
-  },
-  "devDependencies": {
-    "rollup-plugin-babel": "^2.7.1",
-    "rollup-plugin-commonjs": "^7.0.0",
-    "rollup-plugin-node-resolve": "^2.0.0"
-  }
+	"name": "vue-ityped",
+	"version": "0.2.1",
+	"description": "awesome ityped for vue",
+	"main": "lib/vue-ityped.js",
+	"browser": "dist/vue-ityped.js",
+	"module": "src/index.js",
+	"files": [
+		"dist",
+		"lib",
+		"src"
+	],
+	"keywords": [
+		"vue",
+		"ityped"
+	],
+	"author": "monkindey",
+	"scripts": {
+		"build:cjs": "rollup -c --environment BUILD_ENV:cjs",
+		"build:umd": "rollup -c --environment BUILD_ENV:umd",
+		"build:umd:min": "rollup -c --environment BUILD_ENV:umd,MIN"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/monkindey/vue-ityped"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"object-assign": "^4.1.1"
+	},
+	"devDependencies": {
+		"rollup-plugin-babel": "^2.7.1",
+		"rollup-plugin-commonjs": "^7.0.0",
+		"rollup-plugin-node-resolve": "^2.0.0",
+		"rollup-plugin-uglify": "^1.0.1"
+	}
 }
