@@ -9,7 +9,7 @@
 ## Dependencies
 
 * Vue
-* ityped@0.08
+* ityped@0.0.8
 
 ## Usage
 
